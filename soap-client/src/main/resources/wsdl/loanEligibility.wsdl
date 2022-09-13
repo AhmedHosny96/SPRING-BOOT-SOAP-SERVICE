@@ -1,10 +1,6 @@
-This XML file does not appear to have any style information associated with it. The document tree is shown below.
-<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://www.hosny.com/soap-service-loan"
-                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.hosny.com/soap-service-loan"
-                  targetNamespace="http://www.hosny.com/soap-service-loan">
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://www.hosny.com/soap-service-loan" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.hosny.com/soap-service-loan" targetNamespace="http://www.hosny.com/soap-service-loan">
     <wsdl:types>
-        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
-                    targetNamespace="http://www.hosny.com/soap-service-loan">
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.hosny.com/soap-service-loan">
             <xsd:element name="CustomerRequest">
                 <xsd:complexType>
                     <xsd:sequence>
@@ -28,11 +24,11 @@ This XML file does not appear to have any style information associated with it. 
         </xsd:schema>
     </wsdl:types>
     <wsdl:message name="CustomerRequest">
-        <wsdl:part element="tns:CustomerRequest" name="CustomerRequest"></wsdl:part>
+        <wsdl:part element="tns:CustomerRequest" name="CustomerRequest"> </wsdl:part>
     </wsdl:message>
     <wsdl:portType name="LoanEligibilityIndicator">
         <wsdl:operation name="Customer">
-            <wsdl:input message="tns:CustomerRequest" name="CustomerRequest"></wsdl:input>
+            <wsdl:input message="tns:CustomerRequest" name="CustomerRequest"> </wsdl:input>
         </wsdl:operation>
     </wsdl:portType>
     <wsdl:binding name="LoanEligibilityIndicatorSoap11" type="tns:LoanEligibilityIndicator">
